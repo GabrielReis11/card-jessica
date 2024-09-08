@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: Codec-bold-trial;
+
+    /*Caso a fonte esteja na mesma pasta*/
+    src: url("./assets/fontes/codec/Codec-Cold-Regular-trial.ttf");
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/assets/images/bg-cartao-efeito.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card{
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: rgba(185, 190, 196, 0.288) 0px 8px 24px;
+}
+
+.logo{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-body{
+    border: 1px solid #ECAAAC;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 !important;
+}
+
+.foto-jessica{
+    width: 65%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.lista-func{
+    margin-top: 15px;
+    font-family: Codec-bold-trial;
+    color: #9A7A7F;
+    font-size: 16px;
+    font-weight: 300;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px auto 150px;
+
+}
+
+.lista-func li{
+    background-image: url(./assets/images/marcador-removebg-preview.png);
+    padding-left: 1.5rem;
+    background-position: 0 0;
+    background-size: 1.2rem 1.2rem;
+    background-repeat: no-repeat;
+}
+
+.toque-icon{
+    width: 50%;
+    margin-top: 20px;
+    margin: 10px auto 15px;
+}
+
+.redes{
+    background-color: #0A4569;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin: 100px auto;
+    width: 100%;
+    padding: 0 25px;
+}
+
+.redes-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+.img-redes{
+    width: 35px;
+    height: 35px;
+}
+
+.nome-redes{
+    font-family: Codec-bold-trial;
+    font-size: 10px;
+    color: white;
+    margin-top: 10px;
+}
