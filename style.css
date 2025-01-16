@@ -14,79 +14,63 @@
 }
 
 body{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+}
+.card-zone{
+    width: 100%;
     height: 100vh;
-    width: 100vw;
-    background-image: url('/assets/images/bg-cartao-efeito.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card{
-    background-color: transparent !important;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 410px;
+    max-height: 750px;
     border: none !important;
-    box-shadow: rgba(185, 190, 196, 0.288) 0px 8px 24px;
 }
 
-.logo{
-    width: 80%;
-    margin: 0 auto;
-}
+.img-jessica{
+    width: 100%;
+    max-height: 750px;
 
-.card-body{
-    border: 1px solid #ECAAAC;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 15px 0 !important;
-}
-
-.foto-jessica{
-    width: 65%;
-    height: auto;
-    margin: auto;
-    margin-bottom: 10px;
 }
 
 .lista-func{
-    margin-top: 15px;
+    position: absolute;
     font-family: Codec-bold-trial;
-    color: #9A7A7F;
-    font-size: 16px;
+    color: white;   
+    top: 50%;
+    left: 22%;
+    font-size: 1rem;
     font-weight: 300;
     list-style-type: none;
     padding: 0;
-    margin: 10px auto 150px;
-
 }
 
 .lista-func li{
-    background-image: url(./assets/images/marcador-removebg-preview.png);
+    background-image: url(./assets/images/marca-de-verificacao.png);
     padding-left: 1.5rem;
     background-position: 0 0;
-    background-size: 1.2rem 1.2rem;
+    background-size: 1rem 1rem;
     background-repeat: no-repeat;
 }
 
-.toque-icon{
-    width: 50%;
-    margin-top: 20px;
-    margin: 10px auto 15px;
-}
-
 .redes{
-    background-color: #0A4569;
+    background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     position: absolute;
-    bottom: 0;
-    margin: 100px auto;
-    width: 100%;
-    padding: 0 25px;
+    bottom: 15vh;
+   
 }
+
+/* @media (max-wi: 680px){
+
+} */
 
 .redes-info{
     display: flex;
@@ -98,8 +82,34 @@ body{
 }
 
 .img-redes{
-    width: 35px;
+    width: 40px;
     height: 35px;
+}
+
+@media(max-width: 540px ){
+    .redes{
+        bottom: 15vh;
+    }
+    .redes-info{
+        padding: 10px 5px;
+    }
+    .img-redes{
+        width: 35px;
+        height: 30px;
+    }
+}
+
+@media(max-width: 375px ){
+    .lista-func{
+        font-size: 0.75rem;
+    }
+    .redes{
+        bottom: 12vh;
+    }
+    .img-redes{
+        width: 35px;
+        height: 30px;
+    }
 }
 
 .nome-redes{
